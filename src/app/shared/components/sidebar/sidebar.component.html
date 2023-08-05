@@ -1,0 +1,10 @@
+<div class="t-sidebar">
+  <app-icon [name]="sidebar.logo" [size]="26"></app-icon>
+
+  <ul class="t-menu">
+    <li *ngFor="let item of sidebar.itens" class="t-menu-item">
+      <app-icon [name]="item.icon"></app-icon>
+      <span>{{ item.description }}</span>
+    </li>
+  </ul>
+</div>
