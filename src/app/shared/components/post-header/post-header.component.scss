@@ -1,0 +1,13 @@
+@import "../../../styles/colors.scss";
+
+.t-post-header {
+  display: flex;
+  gap: 4px;
+  color: $color-dark-gray;
+  font-size: 15px;
+
+  > .t-user-name {
+    color: $color-dark;
+    font-weight: 700;
+  }
+}
