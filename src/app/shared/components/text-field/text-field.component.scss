@@ -1,0 +1,15 @@
+@import "../../../styles/colors.scss";
+
+.t-text-field {
+  resize: none;
+  width: 100%;
+  outline: 0;
+  border: 0;
+  font-size: 18px;
+  color: $color-dark;
+
+  &::placeholder {
+    color: $color-dark-gray;
+    font-size: 18px;
+  }
+}
