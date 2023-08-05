@@ -1,0 +1,17 @@
+<div class="t-post-preview">
+  <app-avatar [image]="user.avatar"></app-avatar>
+
+  <div>
+    <app-post-header
+      [name]="user.name"
+      [userName]="user.userName"
+      [postDate]="post.date"
+    ></app-post-header>
+
+    <p class="t-content">
+      {{ post.message }}
+    </p>
+
+    <app-post-footer></app-post-footer>
+  </div>
+</div>

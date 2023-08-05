@@ -1,0 +1,13 @@
+@import "../../../styles/colors.scss";
+
+.t-post-preview {
+  padding: 16px 32px;
+  border-top: 1px solid $color-extra-light-gray;
+  display: grid;
+  gap: 16px;
+  grid-template-columns: auto 1fr;
+
+  > .t-content {
+    color: $color-dark;
+  }
+}
