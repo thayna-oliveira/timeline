@@ -1,0 +1,17 @@
+@import "../../../styles/colors.scss";
+
+.t-navbar {
+  padding: 24px 32px;
+  backdrop-filter: blur(12px);
+  position: sticky;
+  background: rgba($color-extra-light, 0.3);
+  display: flex;
+  justify-content: space-between;
+  top: 0;
+
+  > .t-page-name {
+    margin: 0;
+    font-size: 19px;
+    font-weight: 700;
+  }
+}
