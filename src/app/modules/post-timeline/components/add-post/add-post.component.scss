@@ -11,6 +11,12 @@
     > .icons {
       display: flex;
       gap: 24px;
+      flex: 1;
+    }
+
+    > .limit {
+      color: $color-dark-gray;
+      margin-right: 24px;
     }
   }
 }

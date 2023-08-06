@@ -1,4 +1,5 @@
 @import "styles/colors.scss";
+@import "styles/breakpoints.scss";
 
 .t-wrapper {
   display: grid;
@@ -12,6 +13,7 @@
     height: 100%;
     overflow: auto;
     border-right: 1px solid $color-extra-light-gray;
+    max-width: 600px;
 
     &::-webkit-scrollbar {
       display: none;

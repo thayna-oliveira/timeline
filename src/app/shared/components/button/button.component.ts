@@ -9,6 +9,7 @@ import { ButtonType } from './button.type';
 export class ButtonComponent {
   @Input() label = '';
   @Input() type: ButtonType = '-primary';
+  @Input() disabled: boolean;
   @Output() onClickEvent = new EventEmitter();
 
   handleClickEvent(): void {

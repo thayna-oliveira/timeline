@@ -15,7 +15,7 @@ export class AddPostComponent implements OnInit {
 
   ngOnInit(): void {
     this.formGroup = this.formBuilder.group({
-      message: ['', [Validators.required, Validators.maxLength(130)]],
+      message: ['', [Validators.required, Validators.maxLength(140)]],
     });
   }
 

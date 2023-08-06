@@ -13,7 +13,13 @@
       <app-icon name="stats"></app-icon>
       <app-icon name="smiley"></app-icon>
     </div>
-    <span>{{ 140 - formGroup.controls["message"].value?.length }} | 140</span>
-    <app-button label="Tweet" (onClickEvent)="savePost()"></app-button>
+    <span class="limit"
+      >{{ formGroup.controls["message"].value?.length }} | 140</span
+    >
+    <app-button
+      label="Tweet"
+      (onClickEvent)="savePost()"
+      [disabled]="!formGroup.valid"
+    ></app-button>
   </div>
 </div>
