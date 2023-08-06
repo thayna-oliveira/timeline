@@ -1,0 +1,20 @@
+@import "styles/colors.scss";
+
+.t-wrapper {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0 auto;
+  max-width: 1024px;
+
+  > .t-content {
+    height: 100%;
+    overflow: auto;
+    border-right: 1px solid $color-extra-light-gray;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}

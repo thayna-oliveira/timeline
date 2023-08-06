@@ -1,1 +1,8 @@
-<router-outlet></router-outlet>
+<div class="t-wrapper">
+  <app-sidebar [sidebar]="sidebar"></app-sidebar>
+
+  <div class="t-content">
+    <app-navbar title="Home"></app-navbar>
+    <router-outlet></router-outlet>
+  </div>
+</div>
