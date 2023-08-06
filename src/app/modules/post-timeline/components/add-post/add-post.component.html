@@ -1,0 +1,19 @@
+<div class="t-add-post">
+  <form [formGroup]="formGroup">
+    <app-text-field
+      placeholder="What's happening?"
+      controlName="message"
+      name="message"
+    ></app-text-field>
+  </form>
+  <div class="t-post-footer">
+    <div class="icons">
+      <app-icon name="image"></app-icon>
+      <app-icon name="gif"></app-icon>
+      <app-icon name="stats"></app-icon>
+      <app-icon name="smiley"></app-icon>
+    </div>
+    <span>{{ 140 - formGroup.controls["message"].value?.length }} | 140</span>
+    <app-button label="Tweet" (onClickEvent)="savePost()"></app-button>
+  </div>
+</div>

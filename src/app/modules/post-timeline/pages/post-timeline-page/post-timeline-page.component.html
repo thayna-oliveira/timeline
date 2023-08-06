@@ -1,0 +1,12 @@
+<div class="t-new-post">
+  <app-avatar [image]="userData.avatar"></app-avatar>
+  <app-add-post (onAddPost)="savePost($event)"></app-add-post>
+</div>
+
+<div *ngIf="posts" class="t-post-list">
+  <app-post-preview
+    *ngFor="let post of posts"
+    [post]="post"
+    [user]="userData"
+  ></app-post-preview>
+</div>

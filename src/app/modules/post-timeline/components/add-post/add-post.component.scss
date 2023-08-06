@@ -1,0 +1,16 @@
+@import "../../../../styles/colors.scss";
+
+.t-add-post {
+  display: grid;
+
+  > .t-post-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    > .icons {
+      display: flex;
+      gap: 24px;
+    }
+  }
+}
